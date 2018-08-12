@@ -1,0 +1,52 @@
+@import "theme.less";
+footer {
+  background: black;
+  color: #cacaca;
+  .footer-items-wrapper {
+    padding: 50px 0 17px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.11);
+    .footer-item {
+      width: calc(1100px / 4);
+      h4 {
+        font-family: "Roboto Condensed", sans-serif;
+        color: #6c6c6c;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #b6b6b6;
+      }
+      .icon-item {
+        display: flex;
+        margin-top: 5px;
+        i {
+          color: @colorGold;
+          font-size: 15px;
+          margin-right: 14px;
+          padding-top: 3px;
+        }
+      }
+      .item-space {
+        margin-bottom: 33px;
+      }
+    }
+    .pop-posts {
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  .copy {
+    padding: 50px 0 50px 0;
+  }
+  a:hover {
+    color: @colorGold;
+    transition: 0.2s;
+  }
+}

@@ -1,0 +1,115 @@
+@import "theme.less";
+
+@media (max-width: 1189px) {
+  body {
+    .main-container {
+      width: 75vw;
+    }
+    .navigation {
+      .navigation-wrapper {
+        .logo-nav-wrapper {
+          display: flex;
+          justify-content: center;
+          nav {
+            display: none;
+          }
+        }
+      }
+    }
+    .unvis-menu {
+      display: block;
+    }
+    .background-photo {
+      height: 45vh;
+      .main-text-wrapper {
+        h1 {
+          font-size: 29px;
+        }
+        span {
+          font-size: 25px;
+        }
+      }
+    }
+    .info {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .info-item {
+        width: 45%;
+      }
+      .info-item:nth-child(3),
+      .info-item:nth-child(4) {
+        margin-top: 25px;
+      }
+    }
+    .portfolio {
+      h2 {
+        text-align: center;
+      }
+      .port-items-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        .port-item {
+          width: 55%;
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin-top: 75px;
+          }
+        }
+      }
+    }
+    footer {
+      .footer-items-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .footer-item {
+          width: 45%;
+          &:nth-child(3),
+          &:nth-child(4) {
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    .background-photo {
+      height: 30%;
+      .main-text-wrapper {
+        height: 150px;
+      }
+      span {
+        display: none;
+      }
+    }
+    .info {
+      .info-item {
+        width: 51%;
+        &:nth-child(2) {
+          margin-top: 25px;
+        }
+      }
+    }
+    .portfolio {
+      h2 {
+        margin-bottom: 50px;
+      }
+    }
+    footer {
+      .footer-items-wrapper {
+        padding-bottom: 55px;
+        .footer-item {
+          width: 51%;
+          &:nth-child(2) {
+            margin-top: 25px;
+          }
+          &:nth-child(3) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
